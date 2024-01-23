@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="google-site-verification" content="dZNpgQnQdAyIW140b_MvsLGAHiCrPbBxeWO4JfoQhNA" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Open+Sans:400,700|Roboto:400,700,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Dancing+Script|Indie+Flower|Liu+Jian+Mao+Cao|Lobster&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+    <link rel="stylesheet" href="css/styles.css">
+    <title>I. E. Maestro Arenas Betancur</title>
+</head>
+
+<body>
+    <!--header-->
+    <header class="encabezado-sitio">
+        <div class="busqueda">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-md-4 py-2">
+                        <form action="#" class="busqueda">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="¿Qué buscas?" required>
+                                <div class="input-group-append">
+                                    <input type="submit" value="buscar" class="btn btn-outline-light">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-4">
+                        <nav class="sociales text-center text-lg-right">
+                            <ul>
+                                <li>
+                                    <a href="https://www.gmail.com" target="_blank">
+                                        <span class="sr-only"> Gmail </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/iemaestroarenasbetancur123?epa=SEARCH_BOX"
+                                        target="_blank">
+                                        <span class="sr-only"> Facebook </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/iemab5/" target="_blank">
+                                        <span class="sr-only"> instagram </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://youtube.com" target="_blank">
+                                        <span class="sr-only"> YouTube </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row mt-4 py-4 text-center">
+                <div class="col-md-4">
+                    <a href="index.html">
+                        <img src="img/escudo.png" alt="escudo_iemab" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <img src="img/logo.jpg" alt="logo_iemab" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--BARRA DE NAVEGACION-->
+    <div class="navegacion">
+        <nav class="nav-principal navbar navbar-expand-md navbar-light bg-faded">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav_principal"
+                aria-label="Mostrar Navegacion">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="#" class="navbar-brand d-lg-none">IEMAB</a>
+            <div class="container">
+                <div class="collapse navbar-collapse w-100" id="nav_principal">
+                    <ul class="nav nav-justified w-100 flex-column flex-sm-row">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="insitucional.html" class="nav-link">Institucional</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="comunidad.html" class="nav-link">Comunidad Educativa</a>
+                            <ul class="nav">
+                                <li class="nav-item"><a class="nav-link" href="">Equipo Directivo</a></li>
+                                <li class="nav-item"><a class="nav-link" href="">docentes primaria</a></li>
+                                <li class="nav-item"><a class="nav-link" href="">docentes secundaria</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="semilleros.html" class="nav-link">proyectos institucionales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contacto.html" class="nav-link">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--.collapse-->
+            </div>
+            <!--.container-->
+        </nav>
+    </div>
+
+    <!--slider-->
+    <div class="container">
+        <div id="slider-iemab" class="carousel slide mt-3 " data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#slider-iemab" data-slide-to="0" class="active"></li>
+                <li data-target="#slider-iemab" data-slide-to="1"></li>
+                <li data-target="#slider-iemab" data-slide-to="2"></li>
+                <li data-target="#slider-iemab" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <a href="noticias.html"><img src="img/slide_04.png" class="img-fluid"></a>
+                    <div class="carousel-caption">
+                        <h4 class="text-uppercase">informe financiero marzo 2020</h4>
+                    </div>
+                </div>
+                <!--.carousel-item-->
+
+                <div class="carousel-item">
+                    <img src="img/slide_02.png" class="img-fluid">
+                    <div class="carousel-caption">
+                        <h4 class="text-uppercase">dia de la mujer 2020</h4>
+                    </div>
+                </div>
+                <!--.carousel-item-->
+
+                <div class="carousel-item">
+                    <img src="img/slide_03.png" class="img-fluid">
+                    <div class="carousel-caption">
+                        <h4 class="text-uppercase">debate personeria 2020</h4>
+                    </div>
+                </div>
+                <!--.carousel-item-->
+                <div class="carousel-item">
+                    <a href="noticias.html"><img src="img/slide_01.png" class="img-fluid"></a>
+                    <div class="carousel-caption">
+                        <h4 class="text-uppercase">presentacion chaqueta once promocion 2020</h4>
+                    </div>
+                </div>
+
+            </div>
+            <!--carousel-inner-->
+            <a href="#slider-iemab" class="carousel-control-prev" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+
+            <a href="#slider-iemab" class="carousel-control-next" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+    </div>
+
+    <!--noticias y fan page-->
+    <section class="noticia mt-5">
+        <div class="container mt-4">
+            <div class="row mt-4">
+                <div class="col-lg-8 text-center text-lg-left">
+                    <h3 class="mb-3">noticias iemab</h3>
+                    <div class="row mb-3">
+                        <div class="col-lg-4">
+                            <img src="img/noticias_mini1.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-lg-8">
+                            <h4>Invitación Pública</h4>
+                            <p class="meta">subido por <span>Admin</span></p>
+                            <p>La Institucion Educativa Maestro Arenas Betancur, en desarrollo de sus competencias
+                                invita a licitacion publica para las siguientes ofertas:
+                            </p>
+                            <a href="noticias.html" class="btn btn-success btn-sm">leer más</a>
+                        </div>
+                    </div>
+                    <!--row-->
+                    <div class="row mb-3">
+                        <div class="col-lg-4">
+                            <img src="img/noticias_mini2.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-lg-8">
+                            <h4>Posesión del Nuevo Gobierno Escolar</h4>
+                            <p class="meta">subido por <span>Admin</span></p>
+                            <p>La posesión del nuevo gobierno escolar se realizó el pasado 8 de mayo, usando una
+                                plataforma virtual por razones de la contingencia. Los representantes que fueron elegidos
+                                por ustedes, serán voceros ante los diferentes estamentos de la Institución...
+                            </p>
+                            <a href="noticias.html" class="btn btn-success btn-sm">leer más</a>
+                        </div>
+                    </div>
+                    <!--row-->
+                </div>
+                <div class="col-lg-4">
+                    <h3 class="mb-3">el maestro al dia</h3>
+                    <div class="pagina mt-2 text-center">
+                        <iframe
+                            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FIE-Maestro-Arenas-Betancur-110533490375509%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
+                            width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                            allowTransparency="true" allow="encrypted-media">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--revista y enlaces-->
+    <section class="revista my-5 ">
+        <div class="container  mt-3">
+            <div class="row">
+                <div class="col-md-8">
+                    <h3>Revista El Maestro</h3>
+                    <div style="text-align:center;">
+                        <div style="margin:8px 0px 4px;"><a href="https://www.calameo.com/books/005744864022dbddd43b9"
+                                target="_blank">El Maestro Revista Digital</a></div><iframe
+                            src="//v.calameo.com/?bkcode=005744864022dbddd43b9" width="480" height="300" frameborder="0"
+                            scrolling="no" allowtransparency allowfullscreen style="margin:0 auto;"></iframe>
+                        <div style="margin:4px 0px 8px;"><a href="http://www.calameo.com/">Publish at Calameo</a></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h3>colegio iemab</h3>
+                    <div class="enlaces text-center">
+                        <a class="btn btn-warning btn-lg" href="akrosnotas.html"><i class="fab fa-accusoft"></i> Akros
+                            notas</a>
+                    </div>
+                    <div class="enlaces text-center">
+                        <a class="btn btn-warning btn-lg" href="biblioteca.html"><i class="fas fa-book-open"></i>
+                            Biblioteca</a>
+                    </div>
+                    <div class="enlaces text-center">
+                        <a class="btn btn-warning btn-lg" href="agenda.html"><i class="fas fa-address-book"></i>
+                            Agenda</a>
+                    </div>
+                    <div class="enlaces text-center">
+                        <a class="btn btn-warning btn-lg"
+                            href="https://www.facebook.com/egresados.iemab.9?__tn__=%2CdCH-R-R&eid=ARDyi-7WdfDi74YDseaeomNxNR4pSHghHTFcjtt0ZDDVqJ1h9YQVD1Z0BK04ikCDniQN0mU4dF8MncNU&hc_ref=ARQ57RiN-4HR4w6JS6EtrONx82_PZAcxv-EQqZlU5wuXdACu1LgiqSwShYi78Ai4UNk&fref=nf" target="_blank"><i
+                                class="fas fa-graduation-cap"></i> Egresados</a>
+                    </div>
+                    <div class="enlaces text-center">
+                        <a class="btn btn-warning btn-lg" href="inclusion.html"><i class="fas fa-praying-hands"></i>
+                            inclusion y equidad</a>
+                    </div>
+                    <div class="enlaces text-center">
+                        <a class="btn btn-warning btn-lg" href="https://www.gmail.com" target="_blank"><i class="fas fa-envelope"></i>
+                            email institucional</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--galerias-->
+    <section class="galerias mt-5">
+        <div class="container">
+            <h3>galeria</h3>
+
+            <div class="galeria text-center mt-3 p-2">
+                <h4 class="enlaces-interes text-center mt-2">Presentación Chaqueta Promoción 2020</h4>
+                <a href="#" data-target="#imagen_1" data-toggle="modal">
+                    <img src="img/galeriamini1.jpg" class="img-fluid mt-2">
+                </a>
+                <a href="#" data-target="#imagen_2" data-toggle="modal">
+                    <img src="img/galeriamini2.jpg" class="img-fluid mt-2">
+                </a>
+                <a href="#" data-target="#imagen_3" data-toggle="modal">
+                    <img src="img/galeriamini3.jpg" class="img-fluid mt-2">
+                </a>
+                <a href="#" data-target="#imagen_4" data-toggle="modal">
+                    <img src="img/galeriamini4.jpg" class="img-fluid mt-2">
+                </a>
+                <a href="#" data-target="#imagen_5" data-toggle="modal">
+                    <img src="img/galeriamini5.jpg" class="img-fluid mt-2">
+                </a>
+
+                <div class="modal fade" id="imagen_1" tabindex="-1" role="dialog" aria-labelledby="imagen q"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <img src="img/galeriagrande1.jpg" class="img-fluid">
+                            </div>
+                            <!--modal-body-->
+                        </div>
+                        <!--modal-content-->
+                    </div>
+                    <!--modal-dialog-->
+                </div>
+                <!--modal-->
+                <div class="modal fade" id="imagen_2" tabindex="-1" role="dialog" aria-labelledby="imagen q"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <img src="img/galeriagrande2.jpg" class="img-fluid">
+                            </div>
+                            <!--modal-body-->
+                        </div>
+                        <!--modal-content-->
+                    </div>
+                    <!--modal-dialog-->
+                </div>
+                <!--modal-->
+                <div class="modal fade" id="imagen_3" tabindex="-1" role="dialog" aria-labelledby="imagen q"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <img src="img/galeriagrande3.jpg" class="img-fluid">
+                            </div>
+                            <!--modal-body-->
+                        </div>
+                        <!--modal-content-->
+                    </div>
+                    <!--modal-dialog-->
+                </div>
+                <!--modal-->
+                <div class="modal fade" id="imagen_4" tabindex="-1" role="dialog" aria-labelledby="imagen q"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <img src="img/galeriagrande4.jpg" class="img-fluid">
+                            </div>
+                            <!--modal-body-->
+                        </div>
+                        <!--modal-content-->
+                    </div>
+                    <!--modal-dialog-->
+                </div>
+                <!--modal-->
+                <div class="modal fade" id="imagen_5" tabindex="-1" role="dialog" aria-labelledby="imagen q"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <img src="img/galeriagrande5.jpg" class="img-fluid">
+                            </div>
+                            <!--modal-body-->
+                        </div>
+                        <!--modal-content-->
+                    </div>
+                    <!--modal-dialog-->
+                </div>
+                <!--modal-->
+            </div>
+            <!--galeria-->
+        </div>
+    </section>
+
+    <!--mapa-->
+    <div class="container mt-5">
+        <h3>aqui estamos</h3>
+        <div id="mapa" class="mapa mt-3"></div>
+    </div>
+
+    <!--foto-->
+    <div class="foto mt-5">
+        <div class="container">
+            <h1 class="text-center pt-5 pb-3">“Con alegría y disciplina por los caminos de la excelencia”.</h1>
+            <p class="text-right pb-5"></p>
+        </div>
+
+    </div>
+
+    <!--enlaces de interes-->
+    <section class="mt-5">
+        <div class="container">
+            <h4 class="enlaces-interes">Enlaces de Interes</h4>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-6 col-lg-2 text-center">
+                    <a href="http://aprende.colombiaaprende.edu.co/cainicio" target="_blank">
+                        <img src="img/logo_colombiaprende.png" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-2 text-center">
+                    <a href="https://estrategia.gobiernoenlinea.gov.co/623/w3-channel.html" target="_blank">
+                        <img src="img/logo_gobiernoenlinea.png" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-2 text-center">
+                    <a href="https://www.icfes.gov.co/" target="_blank">
+                        <img src="img/logo_icfes.png" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-2 text-center">
+                    <a href="https://www.medellin.gov.co/irj/portal/medellin" target="_blank">
+                        <img src="img/logo_medellin.png" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-2 text-center">
+                    <a href="https://www.mineducacion.gov.co/1759/w3-channel.html?_noredirect=1" target="_blank">
+                        <img src="img/logo_mineducacion.png" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-2 text-center">
+                    <a href="http://www.seeduca.gov.co/" target="_blank">
+                        <img src="img/logo_seduca.png" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer class="footer-sitio pt-3 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <img src="img/imagen_footer.png" class="img-fluid">
+                </div>
+                <div class="col-md-6 text-center text-lg-left">
+                    <p id="direccion"><span class="sr-only"></span> Calle 100 # 66 - 54 Medellin - Antioquia </p>
+                    <p id="telefono"><span class="sr-only"></span> (+57) 4 4719328 </p>
+                    <p id="correo"><span class="sr-only"></span> coordinacion.iemab@gmail.com </p>
+                </div>
+            </div>
+        </div>
+        <hr class="w-100">
+        <p class="text-center copyright">Copyright (c) I. E. Maestro Arenas Betancur - Todos los derechos
+            reservados 2019</p>
+    </footer>
+
+    <script src="js/jquery.slim.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+        integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+        crossorigin=""></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

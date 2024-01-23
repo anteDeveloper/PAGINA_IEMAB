@@ -1,0 +1,322 @@
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-style: italic;
+}
+h3 {
+    background-color: #ffffff;
+    color: #0070A8;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    border-bottom: 2px solid #0070A8;
+    padding-left: 20px;
+    font-style: italic;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    font-style: italic;
+}
+
+/** header **/
+.busqueda {
+    background-color: #0070A8;
+}
+
+/** Sociales **/
+.sociales ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+.sociales ul li {
+    position: relative;
+    display: inline-block;
+}
+.sociales ul li a::before {
+    font-family:'FontAwesome';
+    display: inline-block;
+    vertical-align: top;
+    padding: 0.4rem;
+    content: '\f08e';
+    -webkit-font-smoothing: antialiased;
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+.sociales ul li a[href*="facebook.com"]::before{
+    content: '\f230';
+}
+.sociales ul li a[href*="twitter.com"]::before{
+    content: '\f081';
+}
+.sociales ul li a[href*="instagram.com"]::before{
+    content: '\f16d';
+}
+.sociales ul li a[href*="gmail.com"]::before{
+    content: '\f0e0';
+}
+.sociales ul li a[href*="youtube.com"]::before{
+    content: '\f16a';
+}
+
+/* estilos menu de navegacion*/
+.navegacion {
+    background-color: #0070A8;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+}
+.navbar-light .navbar-toggler {
+    background-color: #ffffff;    
+}
+.navbar-light .navbar-brand,
+.navbar-light .navbar-brand:hover {
+    color: #ffffff;
+}
+.nav-link {
+    color: #ffffff;
+    font-size: 16px;
+    transition: all .3s ease-in-out;
+    text-align: center;
+}
+
+.nav-link:hover {
+    background-color: rgb(2, 90, 134);
+    color: #ffffff;
+}
+
+.nav-item ul {
+    display: none;
+    min-width: 140px;
+}
+
+.nav-item:hover ul {
+}
+
+.fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+
+/*enlaces-interes*/
+.enlaces-interes {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    border-bottom: 2px solid #918f8f;
+}
+.enlaces-interes a {
+    cursor: pointer!important;
+}
+
+/** enlaces**/
+.enlaces .btn-warning {
+    background-color: #ffffff;
+    border-color: #0070A8;
+    color: #0070a8;
+    margin-top: 10px;
+    width: 80%;
+    padding: 10px 0 10px 0;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.enlaces .btn-warning:hover {
+    transition: none;
+    background-color: #0070A8;
+    border: none;
+    color: #ffffff;
+}
+
+/* NOTICIAS */
+.noticia h4 {
+    font-size: 20px;
+    font-style: italic;
+}
+.noticia h4::after {
+    content: '';
+    display: block;
+    width: 8rem;
+    height: .2rem;
+    background-color: #0070A8;
+    margin-top: 5px;
+}
+.meta span {
+    color: salmon;
+}
+.btn-success {
+    background-color: #0070A8;
+    text-transform: uppercase;
+    border-color: #0070A8;
+}
+.btn-success:hover {
+    background-color: rgb(0, 80, 121)!important;
+    cursor: pointer!important;
+    border-color: #0070A8!important;
+}
+
+/* galeria */
+
+
+/** mapa **/
+.mapa {
+    height: 300px;
+    z-index: 1;
+}
+
+/*foto*/
+.foto {
+    background-image: url(../img/colegio.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    color: white;
+    
+}
+
+@media (min-width: 992px) {
+    .foto {
+        background-size: cover;
+    }
+}
+.foto h1 {
+    font-size: 3.5rem;
+    font-family: 'Dancing Script', cursive;
+}
+.foto p {
+    font-size: 1.8rem;
+    font-family: 'Open Sans', sans-serif;
+    text-align: right;
+    line-height: 1.2rem;
+}
+
+/*estilos footer*/
+.footer-sitio {
+    background-color: #0070A8;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+.footer-sitio p::before {
+    font-family:'FontAwesome';
+    display: inline-block;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+.footer-sitio p[id="direccion"]::before{
+    content: '\f015';
+}
+.footer-sitio p[id="telefono"]::before{
+    content: '\f095';
+}
+.footer-sitio p[id="correo"]::before{
+    content: '\f0e0';
+}
+.copyright {
+    font-style: italic;
+}
+
+/*ESTILOS A LAS INTERNAS*/
+/**hero**/
+
+.hero {
+    position: relative;
+}
+
+.hero h2 {
+    position: absolute;
+    bottom: 2rem;
+    right: 0;
+    background-color: #0070A8;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+.contenido-principal p {
+    font-size: 18px;
+    line-height: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+}
+.contenido-principal span {
+    font-weight: bold;
+}
+
+aside {
+    background-color: #0070A8;
+    color: #ffffff;
+}
+
+aside h2 {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+}
+
+/*contacto*/
+
+.formulario-contacto {
+    border: 2px solid #9a9a9a;
+    background-color: #ffffff;
+}
+.boton-enviar {
+    background-color: #0070A8;
+    border-radius: 10px;
+    padding: 5px 20px;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.boton-enviar:hover {
+    background-color: rgb(2, 88, 131);
+    cursor: pointer;
+}
+
+/** agenda **/
+.agenda {
+    display: flex;
+    justify-content: center;
+}
+.thead-dark {
+    background-color: #0070A8!important;
+}
+
+/**noticias**/
+
+.noticias p {
+    font-size: 12px!important;
+}
+
+.noticias img {
+    border-radius: 10%;
+    width: 150px;
+    height: 250px;
+    border: 3px solid #918f8f;
+}
+
+.imagen_noticia {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid #9a9a9a;
+}
+
+/*inclusion y equidad*/
+
+.contenido-principal {
+    align-items: center;
+    justify-content: center;
+}
+
